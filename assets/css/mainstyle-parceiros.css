@@ -1,0 +1,113 @@
+.parceiros{
+    background: #73b9f1;
+}
+
+.parceiros__secao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation-duration: 3s;
+    animation-name: escorre-tela;
+}
+
+.parceiros__secao--card{
+    margin-top: 10px;
+    height: 400px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.secao__parceiros--card--imagem{
+    margin: 5px 88.391px 5px 88.391px;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.secao__parceiros--card--imagem--pessoa1{
+    background: url(../img/pessoa1.jpg) no-repeat;
+}
+
+.secao__parceiros--card--imagem--pessoa2{
+    background: url(../img/pessoa2.jpg) no-repeat;
+}
+
+.secao__parceiros--card--imagem--pessoa3{
+    background: url(../img/pessoa3.jpg) no-repeat;
+}
+
+.secao__parceiros--card--imagem--pessoa4{
+    background: url(../img/pessoa4.jpg) no-repeat;
+}
+
+.secao__parceiros--card--nome{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+    height: 5%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.secao__parceiros--card--texto{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: black;
+    margin: 5px 0;
+    line-height: 1.5rem;
+    height: 15%;
+    padding-top: 10px;
+}
+
+.secao__parceiros--card--botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    color: #73b9f1;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    height: 60px;
+    font-weight: bold;
+}
+
+.secao__parceiros--card--botao:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
+@keyframes escorre-tela{
+    from{
+        margin-left: 100%;
+        width: 100%;       
+    }
+
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .parceiros__secao{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .parceiros__secao--card{
+        width: 100vw;
+    }
+}
